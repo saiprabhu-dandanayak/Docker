@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zemoso Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <body onload="initialize_app()">
+    <section id="restaurant">
+      <div id="table">
+        <h4>Tables</h4>
+        <input
+          type="text"
+          class="input"
+          placeholder="Search table"
+          id="table-search"
+          oninput="searchTable()"
+        />
+        <ul id="tables"></ul>
+      </div>
+      <div id="menu">
+        <h4>Menu</h4>
+        <input
+          type="text"
+          class="input"
+          placeholder="Search menu... by food"
+          id="menu-search"
+          oninput="searchMenu()"
+        />
+        <ul id="menu-items"></ul>
+      </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div id="modal-header"></div>
+          <div id="modal-body">
+            <table id="rows">
+            </table>
+            <p id="total"></p>
+        </div>
+        <div id="modal-footer"></div>
+      </div>
+      </div>
+    </section>
+    <script src="tables.js"></script>
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
